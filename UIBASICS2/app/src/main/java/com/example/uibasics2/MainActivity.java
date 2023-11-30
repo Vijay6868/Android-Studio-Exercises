@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         btnHello.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Hello");
+                System.out.println("yayyy");
             }
         });
     }
