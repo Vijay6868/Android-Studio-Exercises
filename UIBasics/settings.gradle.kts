@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "UI Basics"
+rootProject.name = "UIBASICS"
 include(":app")
