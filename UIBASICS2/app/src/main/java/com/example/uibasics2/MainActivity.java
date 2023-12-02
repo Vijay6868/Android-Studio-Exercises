@@ -6,15 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private EditText txtName;
+    private TextView txtHello;
+
     @Override
     public void onClick(View v) {
 
-        if (v.getId() == R.id.btnHello) {
-            Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+        if (v.getId() == R.id.edTxtName) {
+
+
+            Toast.makeText(this, "trying to edit", Toast.LENGTH_SHORT).show();
+        }
+        else if (v.getId()==R.id.btnHello) {
+            txtHello.setText("Hello "  + txtName.getText().toString());
         }
     }
     @Override
@@ -32,7 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return true;
             }
         });
-        EditText edTextName = findViewById(R.id.edTxtName);
+        txtName = findViewById(R.id.edTxtName);
+        txtHello = findViewById(R.id.txtHello);
 
     }
 
