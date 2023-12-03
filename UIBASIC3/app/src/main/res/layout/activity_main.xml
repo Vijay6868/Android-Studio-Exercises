@@ -36,6 +36,35 @@
             android:layout_toRightOf="@id/checkboxMatrix"
             android:layout_marginLeft="20dp"/>
     </RelativeLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/moviesReLayout"
+        android:id="@+id/RgMartialStatus">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Married"
+            android:id="@+id/rbMarried"
+            android:layout_marginLeft="15dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single"
+            android:id="@+id/Single"
+            android:layout_marginLeft="15dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Relationship"
+            android:id="@+id/rbInRelationship"
+            android:layout_marginLeft="15dp"/>
+    </RadioGroup>
 
 
 </RelativeLayout>
