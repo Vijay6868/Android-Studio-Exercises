@@ -5,6 +5,12 @@ public class Contact {
     private String email;
     private String imageUrl;
 
+    public Contact(String name, String email, String imageUrl) {
+        this.name = name;
+        this.email = email;
+        this.imageUrl = imageUrl;
+    }
+
     public String getName() {
         return name;
     }
