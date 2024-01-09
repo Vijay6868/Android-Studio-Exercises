@@ -24,6 +24,7 @@ public class ContactRecViewAdapter extends RecyclerView.Adapter<ContactRecViewAd
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //this is
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.contacts_list_item,parent,false);
         ViewHolder holder = new ViewHolder(view);
         return holder;
